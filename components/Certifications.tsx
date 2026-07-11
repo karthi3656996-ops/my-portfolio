@@ -1,7 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
-import { useInView } from 'framer-motion';
+import { motion, Variants, useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
 import { Award, ExternalLink, Calendar, X, ZoomIn } from 'lucide-react';
 import Image from 'next/image';
@@ -93,11 +92,11 @@ const typeColors: Record<string, string> = {
   'LinkedIn Learning': 'text-blue-400 bg-blue-400/10 border-blue-400/20',
 };
 
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: {},
   visible: { transition: { staggerChildren: 0.08 } },
 };
-const cardVariants = {
+const cardVariants: Variants = {
   hidden: { opacity: 0, y: 24, scale: 0.97 },
   visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.45, ease: 'easeOut' } },
 };

@@ -1,7 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
-import { useInView } from 'framer-motion';
+import { motion, Variants, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { ExternalLink, FolderGit2, Hand, MessageSquare, FileText } from 'lucide-react';
 import { FiGithub } from 'react-icons/fi';
@@ -51,11 +50,11 @@ const projects = [
   },
 ];
 
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: {},
   visible: { transition: { staggerChildren: 0.15 } },
 };
-const cardVariants = {
+const cardVariants: Variants = {
   hidden: { opacity: 0, y: 32 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.55, ease: 'easeOut' } },
 };
