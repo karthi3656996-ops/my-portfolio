@@ -17,7 +17,7 @@ const projects = [
     accentBg: 'from-indigo-500/20 to-indigo-600/5',
     border: 'border-indigo-500/20',
     tags: ['Python', 'OpenCV', 'MediaPipe', 'TensorFlow', 'Computer Vision'],
-    github: 'https://github.com/karthi3656996-ops',
+    github: 'https://github.com/karthi3656996-ops/https-github.com-karthi3656996-ops-elysia',
     demo: null,
   },
   {
